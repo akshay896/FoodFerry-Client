@@ -1,0 +1,102 @@
+/* Ensure full page height without scrolling */
+/* html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+} */
+
+.reg-container-bigbox {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: flex;
+  justify-content: center;  
+  /* height: 100vh; Full viewport height */
+  margin-top: 30px;
+}
+
+.login-popup-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff; /* White background */
+  padding: 40px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-sizing: border-box;
+}
+
+.login-popup-title {
+  text-align: center;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.login-popup-title h2 {
+  font-size: 24px; /* Adjusted font size */
+  color: #333; /* Dark gray */
+  margin: 0;
+}
+
+.login-popup-inputs {
+  margin-bottom: 20px; /* Reduced margin */
+}
+
+.login-popup-inputs input {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
+  font-size: 14px; /* Adjusted font size */
+  transition: border-color 0.3s ease;
+}
+
+.login-popup-inputs input:focus {
+  outline: none;
+  border-color: #65c3ba; /* Teal focus color */
+}
+
+button {
+  width: 100%;
+  padding: 10px; /* Adjusted padding */
+  background-color: orange; /* Teal */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px; /* Adjusted font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(222, 146, 7); /* Darker teal on hover */
+}
+
+.login-popup-condition {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666; /* Medium gray */
+}
+
+.login-popup-condition span {
+  color: orange; /* Teal */
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.login-popup-condition span:hover {
+  color: rgb(201, 133, 7); /* Darker teal on hover */
+}
+.password-container {
+  position: relative;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

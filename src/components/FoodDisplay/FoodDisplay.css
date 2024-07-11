@@ -1,0 +1,59 @@
+/* .food-display{
+margin-top: 30px;
+}
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+} */
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-top: 30px;
+  gap: 30px;
+  row-gap: 50px;
+  color: #bbb8b8;
+}
+/* FoodDisplay.css (or any appropriate CSS file) */
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-container input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.input-container input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.input-container .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+}
+
+.input-container .search-icon:hover {
+  color: #007bff;
+}

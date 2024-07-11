@@ -1,0 +1,20 @@
+.home-conatiner{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: fadeIn 1s;
+}
+.home-items{
+  width: 400px;
+}
+.home-conatiner h1{
+  font-size: 60px;
+}
+.home-conatiner p{
+  line-height: 2rem;
+  text-align: justify;
+  color: grey;
+}
+.home-items img{
+  width: 120%;
+}

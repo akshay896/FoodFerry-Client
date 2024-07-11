@@ -1,0 +1,81 @@
+/* Container for the explore menu */
+.explore-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 70px;
+}
+
+/* Styling for the heading inside explore menu */
+.explore-menu h1 {
+  font-weight: 500;
+}
+
+/* Uncomment and adjust this block if needed for explore-menu-text */
+/* 
+.explore-menu-text {
+  max-width: 60%;
+  color: #b1acac;
+} 
+*/
+
+/* Container for the list inside explore menu */
+.explore-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  margin: 20px 0;
+  overflow-x: scroll;
+}
+
+/* Hide scrollbar for explore-menu-list */
+.explore-menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styling for the list items inside explore-menu */
+.explore-menu-list-item img {
+  min-width: 85px;
+  width: 7.5vw;
+  cursor: pointer;
+  transition: 0.2s;
+  height: 80px;
+  margin: 0 25px;
+}
+
+/* Scale down the image on hover */
+.explore-menu-list-item img:hover {
+  transform: scale(0.9);
+}
+
+/* Styling for the paragraph inside list items */
+.explore-menu-list-item p {
+  margin-top: 10px;
+  font-size: max(1.4vw, 16px);
+  cursor: pointer;
+}
+
+/* Styling for the horizontal line */
+.explore-menu hr {
+  margin: 10px 0;
+  height: 2px;
+  background-color: #e2e2e2;
+  border: none;
+}
+
+/* Styling for the active state of list items */
+.explore-menu-list-item .active {
+  border: 1px solid #fff;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+/* Responsive adjustments for screens smaller than 1050px */
+@media (max-width: 1050px) {
+  .explore-menu-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
